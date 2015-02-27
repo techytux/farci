@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="50dp">
+
+<ImageView
+    android:id="@+id/weather_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="6dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="WEEK DAY"
+    android:textSize="22sp"
+    android:id="@+id/day_name"
+    android:layout_marginLeft="60dp"
+    android:paddingLeft="10dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/weather_description"
+    android:layout_below="@+id/day_name"
+    android:text="WEATHER STATUS"
+    android:textSize="14sp"
+    android:layout_marginLeft="60dp"
+    android:paddingLeft="10dp"/>
+
+<TextView
+    android:id="@+id/day_max"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="High Temp"
+    android:textSize="22sp"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="25dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/day_min"
+    android:layout_below="@id/day_max"
+    android:text="Low Temp"
+    android:textSize="14sp"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="25dp"/>
+</RelativeLayout>

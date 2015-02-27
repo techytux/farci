@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sunshine_primary_blue">
+
+        <TextView
+            android:id="@+id/currentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weather_today"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/currentTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="72sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/currentDate"/>
+
+        <TextView
+            android:id="@+id/currentMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/currentTemp"/>
+
+        <ImageView
+            android:id="@+id/today_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/art_clear"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="6dp"/>
+
+        <TextView
+            android:id="@+id/currentWeatherText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/weather_today_text"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:layout_below="@id/today_image"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/forecastWeatherList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_layout">
+
+    </ListView>
+
+</RelativeLayout>
